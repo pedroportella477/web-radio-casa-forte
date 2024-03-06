@@ -1,0 +1,16 @@
+CREATE TABLE radio_data (
+    id INT PRIMARY KEY,
+    program_name VARCHAR(255),
+    program_description TEXT,
+    news1_title VARCHAR(255),
+    news1_description TEXT,
+    news2_title VARCHAR(255),
+    news2_description TEXT,
+    news3_title VARCHAR(255),
+    news3_description TEXT,
+    song1_votes INT,
+    song2_votes INT,
+    song3_votes INT,
+    song4_votes INT,
+    song5_votes INT
+);

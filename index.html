@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rádio Ministerio Casa Forte</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://www.sagicapriprodutora.com.br/wp-content/uploads/2019/03/radio_online_1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        header {
+            background-color: #343a40;
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .container {
+            margin-top: 20px;
+            position: relative;
+        }
+        .radio-program {
+            background-color: #343a40;
+            padding: 10px 0;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .radio-player {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        audio {
+            width: 100%;
+            max-width: 400px;
+        }
+        .news-section {
+            margin-top: 50px;
+            text-align: center;
+        }
+        .news-item {
+            display: inline-block;
+            width: 30%;
+            margin: 0 1.5%;
+            vertical-align: top;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+            color: #000;
+        }
+        .news-item img {
+            max-width: 100%;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .news-item h3 {
+            margin-top: 0;
+        }
+        .voting-section {
+            margin-top: 50px;
+            text-align: center;
+        }
+        .voting-list {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+        .voting-list li {
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #fff;
+        }
+        .progress {
+            height: 20px;
+            margin-bottom: 5px;
+        }
+        .progress-bar {
+            font-size: 14px;
+            line-height: 20px;
+            color: #fff;
+        }
+        .vote-button {
+            background-color: #343a40;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .contact-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+            color: #000;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: calc(100% - 20px);
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            display: block;
+            box-sizing: border-box;
+        }
+        .contact-form select {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            display: block;
+            box-sizing: border-box;
+        }
+        .contact-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #343a40;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Rádio Online</h1>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="radio-program">
+                    <h2>Nome do Programa</h2>
+                    <p>Descrição do programa</p>
+                </div>
+                <div class="radio-player">
+                    <audio controls autoplay>
+                        <source src="https://stream.zeno.fm/khob5eebjk5uv" type="audio/mpeg">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </div>
+                <section class="news-section">
+                    <h2>Últimas Notícias</h2>
+                    <div class="row">
+                        <div class="col-sm-4 news-item">
+                            <img src="https://via.placeholder.com/150" alt="Notícia 1">
+                            <h3>Notícia 1</h3>
+                            <p>Descrição da notícia 1.</p>
+                        </div>
+                        <div class="col-sm-4 news-item">
+                            <img src="https://via.placeholder.com/150" alt="Notícia 2">
+                            <h3>Notícia 2</h3>
+                            <p>Descrição da notícia 2.</p>
+                        </div>
+                        <div class="col-sm-4 news-item">
+                            <img src="https://via.placeholder.com/150" alt="Notícia 3">
+                            <h3>Notícia 3</h3>
+                            <p>Descrição da notícia 3.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="col-md-6">
+                <section class="voting-section">
+                    <h2 style="color: #fff;">Votação da Melhor Música</h2>
+                    <ul class="voting-list">
+                        <li>Música 1 <span class="percentage">30%</span> <button type="button" class="btn btn-primary vote-button">Votar</button></li>
+                        <li>Música 2 <span class="percentage">20%</span> <button type="button" class="btn btn-primary vote-button">Votar</button></li>
+                        <li>Música 3 <span class="percentage">40%</span> <button type="button" class="btn btn-primary vote-button">Votar</button></li>
+                        <li>Música 4 <span class="percentage">10%</span> <button type="button" class="btn btn-primary vote-button">Votar</button></li>
+                        <li>Música 5 <span class="percentage">25%</span> <button type="button" class="btn btn-primary vote-button">Votar</button></li>
+                    </ul>
+                </section>
+                <section class="contact-form">
+                    <h2>Participe!</h2>
+                    <form action="#" method="post">
+                        <input type="text" name="name" placeholder="Nome Completo" required><br>
+                        <input type="tel" name="phone" placeholder="Telefone" required><br>
+                        <select name="request-type" id="request-type">
+                            <option value="prayer">Pedido de Oração</option>
+                            <option value="song">Pedido de Música</option>
+                            <option value="commercial">Contato Comercial</option>
+                        </select><br>
+                        <textarea name="message" placeholder="Mensagem" required></textarea><br>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Desenvolvida por Pedro Portella &copy; <span id="currentYear"></span></p>
+    </footer>
+
+    <script>
+        // Obtém o ano corrente e atualiza o rodapé
+        document.getElementById('currentYear').innerText = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
